@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: block;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(101 14 174) 0%, rgba(12,116,117,1) 90% );
+    /* background-image: radial-gradient( circle farthest-corner at 32.7% 82.7%,  rgba(173,0,171,1) 8.3%, rgba(15,51,92,1) 79.4% );    height: 800px; */
+    /* background-image: linear-gradient( 109.8deg,  rgba(62,5,116,1) -5.2%, rgba(41,14,151,1) -5.2%, rgba(216,68,148,1) 103.3% ); */
+
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(36, 255, 36);
+    text-shadow: 2px 2px 2px #000000;
+}
+
+header, footer {
+    text-align: center;
+    font-size: 70px;
+}
+
+.credits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.credits .card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    padding: .5rem 1rem 1rem 1rem;
+    grid-gap: 1rem;
+    font-size: 25px;
+}
+
+.credits .title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.credits .info {
+    justify-self: start;
+    align-self: center;
+    line-height: 1;
+}
+
+.credits .name {
+    font-size: 30px;
+}
+
+img {
+    border-radius: 2px;
+    box-shadow: 3px 3px 9px -4px #000000;
+}
+
+.credits img {
+    width: 60px;
+    border: 1px solid rgba(83,164,196,1);
+}
+
+.links-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.links img {
+    width: 90px;
+}
+
+.links .name.image img {
+    width: 300px;
+    box-shadow: none;
+}
+
+.links .card {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 1rem;
+    padding: .5rem 1rem 1rem 1rem;
+    justify-self: start;
+    align-self: center;
+}
+
+.links .info {
+    justify-self: start;
+    align-self: center;
+    line-height: 1;
+}
+
+.links .name {
+    font-size: 40px;
+}
+
+.links .description {
+    font-size: 25px;
+    text-transform: initial;
+}
+
+.rounded {
+    border-radius: 50%;
+}
